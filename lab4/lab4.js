@@ -8,8 +8,8 @@ function myDemo($scope) {
 var app = angular.module("myApp", []);
 app.controller("MyCtrl", myDemo);
 
-var app = angular.module("ThongTinAnh", []);
-app.controller("ThongTin", function ($scope) {
+var app = angular.module("BaiTapLab4", []);
+app.controller("BaiTapLab", function ($scope) {
   $scope.thongTins = [
     {
       ten: "Nguyễn Văn Tèo ",
@@ -33,4 +33,46 @@ app.controller("ThongTin", function ($scope) {
       photo: "7.jpg",
     },
   ];
+
+  $scope.count = 0;
+  $scope.myMouse = function () {
+    $scope.count++;
+  };
+  $scope.sayHello = function () {
+    $scope.hihi = $scope.test;
+  };
+  $scope.Tinh = function () {
+    $scope.dt = ($scope.soA + $scope.soB) * 2;
+    $scope.cv = $scope.soA * $scope.soB;
+  };
+
+  $scope.kQ = function () {
+    $scope.cv = $scope.dai * $scope.rong;
+    $scope.dt = ($scope.dai + $scope.rong) * 2;
+  };
+  $scope.xet = function () {
+    if ($scope.diem < 5) {
+      $scope.hl = "Rớt";
+    } else {
+      $scope.hl = "Đậu";
+    }
+  };
+  $scope.xet2 = function () {
+    a = Year($scope.nam);
+    b = new Date().getFullYear();
+    if (b - a < 18 || b - a >= 27) {
+      $scope.hl = "Đậu";
+    } else {
+      $scope.hl = "Đậu";
+    }
+  };
+  // $scope.Hieu = function(){
+  //   $scope.kq = $scope.soA - $scope.soB ;
+  // }
+  // $scope.Tich = function(){
+  //   $scope.kq = $scope.soA * $scope.soB ;
+  // }
+  // $scope.Thuong = function(){
+  //   $scope.kq = $scope.soA / $scope.soB ;
+  // }
 });

@@ -12,8 +12,8 @@
     <title>Document</title>
 </head>
 
-<body ng-app="ThongTinAnh">
-    <div ng-controller="ThongTin">
+<body ng-app="BaiTapLab4">
+    <div ng-controller="BaiTapLab">
         <div class="container">
             <table class="table">
                 <thead>
@@ -35,6 +35,27 @@
                     </tr>
                 </tbody>
             </table>
+            <!-- <h1 ng-mousemove="myMouse()">Đưa chuột vào {{count}}</h1>
+            <input type="text" ng-model="test" name="">
+            <button ng-click="sayHello()">Sơn Đầu Vàng</button>
+            {{hihi}}
+            <br><p></p> -->
+            Chiều Dài
+            <input type="number" ng-model="soA" name="">
+            <br><p></p>
+            Chiều Rộng
+            <input type="number" ng-model="soB" name="">
+            <br><p></p>
+            Diện Tích
+            <input type="number" placeholder="{{dt}}" disabled>
+            <br><p></p>
+            Chu Vi
+            <input type="number" placeholder="{{cv}}" disabled>
+            <br><br>
+                <button ng-click="Tinh()">Tính</button>
+                <!-- <button ng-click="Hieu()">Hiệu</button>
+                <button ng-click="Tich()">Tích</button>
+                <button ng-click="Thuong()">Thương</button> -->
         </div>
     </div>
 </body>
